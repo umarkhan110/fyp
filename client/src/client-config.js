@@ -1,1 +1,0 @@
-export const GoogleMapsAPI = 'AIzaSyAxLuIqOTuNOAKTf21WzItkcet51uU99Ts';

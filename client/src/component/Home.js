@@ -17,7 +17,7 @@ Geocode.setLanguage("en");
 Geocode.setLocationType("ROOFTOP");
 Geocode.enableDebug();
 
-Geocode.setApiKey("AIzaSyAxLuIqOTuNOAKTf21WzItkcet51uU99Ts");
+Geocode.setApiKey(GOOGLE_MAP_API_KEY);
 const google = window.google;
 const Home = ({ google, locations = [] }, props) => {
 

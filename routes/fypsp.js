@@ -7,6 +7,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const Authenticatesp = require("../midleware/Authenticationsp");
 const sgMail = require('@sendgrid/mail')
+dotenv.config({path:'./config.env'});
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, './uploads')
@@ -46,7 +47,7 @@ router.post('/spsignup',upload.single("image"), async (req, res) => {
 
 router.post('/spsignupverify', async (req, res) => {
     const { email } = req.body;
-    sgMail.setApiKey('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')
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     try {
         function generateRandomNumber() {
             var minm = 100000;
