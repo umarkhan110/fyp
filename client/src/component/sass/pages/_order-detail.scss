@@ -1,0 +1,90 @@
+.order-section{
+    padding: 4rem 8rem;
+    width:100%;
+    height:110vh;
+    background-image: url(..//../img/car-mechanic-changing-wheels-car.jpg);    
+    background-size: cover;
+    background-position: center;
+    @include respond(phone){
+        padding:2rem 2rem;
+    }
+    @include respond(phone){
+        padding:2rem 0;
+    }
+    .order-detail{
+        background:rgba(0,0,0,.8);
+        padding:5rem;
+        margin:0 auto;
+        width:70%;
+        font-size:$default-font-size;
+        border-radius:2rem;
+        @include respond(phone){
+            padding:1rem;
+            width:90%;
+        }
+        
+        &__contact{
+            @include clearfix;
+            background-color: white;
+            padding:2rem;
+            border-radius:1rem;
+            &--text{
+                float:left;
+                    }
+            &--icon{
+                float:right;
+                width:5rem;
+                height: 5rem;
+                img{
+                    height: 100%;
+                    width:100%;
+                    transform: translateY(-1rem);
+                }
+            } 
+        }
+        &__info{
+            @include clearfix;
+            &--attribute{
+                float: left;
+            }
+            &--value{
+               float: right;
+            }
+            // &:last-child{
+            //     border-bottom: 1px solid $color-secondary;
+            // }
+        }
+        &__view-more{
+            @include clearfix;
+            &--text{
+                float:left;
+            }
+            &--icon{
+                float: right;
+            }
+        }
+        &__item{          
+            @include clearfix;
+            border-bottom:1px solid $color-secondary;
+            &--quantaty{
+                float:left;
+            }
+            &--price{
+                float:right;
+            }
+        }
+        &__pay{
+            @include clearfix;
+            &--text{
+                float:left;
+            }
+            &--price{
+                float:right;
+            }
+        }
+        }
+        .order-complete{
+            left:45%;
+            transform: translateX(-50%);
+        }
+    }

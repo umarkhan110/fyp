@@ -1,0 +1,10 @@
+.order-processing{
+    padding: 5rem 10rem;
+    &__card{
+        background-color: grey;
+        color:white;
+        width:80%;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,28 @@
+.navigation{
+    width:100%;
+    background-color: $color-secondary;
+    
+    @include clearfix;
+    .logo{
+        float:left;
+        font-size:4rem;
+        .white{
+            color:#fff;
+       }
+       .blue{
+           color:blue;
+       }
+    }
+    .login:link,
+    .login:visited{
+        text-decoration: none;
+        color:$color-white;
+        float:right;
+        margin-right:3rem;
+        font-size:2rem;
+        padding:1.5rem;
+        border-left:.2rem solid white ;
+        border-right:.2rem solid white ;
+        }
+
+}

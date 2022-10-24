@@ -1,0 +1,46 @@
+.user-navigation{
+    padding: 1rem;
+    background-color: $color-secondary;
+    font-size: 1.2rem;
+    @include clearfix;
+    &__logo{
+        float: left;
+    }
+    &__links{
+        float:right;
+        transform: translateY(-2.5rem);
+        li{
+            list-style: none;
+            display:inline-block;
+            margin-right: 2rem;
+            
+        }
+        a:link,
+        a:visited{
+            color:rgb(12, 9, 9);
+            text-decoration: none;
+            display: inline-block;
+            padding: 3px;
+        }
+      li:not(:last-of-type):hover
+        {
+            background-color: white;
+        }
+        
+    }
+    .profile-image{
+        border-radius:50%;
+        height:4rem;
+        width:4rem;
+        // text-align: center;        
+        transform: translateY(2rem);
+        // border:1px solid white; 
+       img{
+           height:4rem;
+           width:4rem;
+           border-radius: 50%;
+           
+       }
+    }
+    
+    }

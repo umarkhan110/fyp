@@ -1,0 +1,30 @@
+.recent-orders{
+     padding:5rem;
+     &__card{
+         background-color: grey;
+         width:80%;
+         padding:2rem;
+         font-size: 1.4rem;
+         color: white;
+         border-radius: 2rem;
+         &--time-box{
+             @include clearfix;
+             &--time{
+                 float:left;
+             }
+             &--earn{
+                 float:right;
+             }
+         }
+         &--user-box{
+            @include clearfix;
+            &--username{
+                float:left;
+            }
+            &--status{
+               float: right;
+            }
+         }
+     }
+}
+

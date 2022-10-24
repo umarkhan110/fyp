@@ -1,0 +1,46 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.2rem 3.5rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+       
+        cursor: pointer;
+    }
+    &-primary{
+        background-color: $color-primary;
+        color:white;
+    }
+    
+}
+.log-details__btn{
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size:4rem;
+        cursor: pointer;
+        display:inline-block; 
+        padding: 4rem;
+        color:rgb(2, 2, 2);
+        border-bottom: .3rem solid black;
+        
+    }
+    &:not(last-child){
+        margin-right:5rem;
+    }
+
+}
+.login-btn{
+    color:$color-white;
+    background-color: $color-primary;
+    margin-left:6rem ;
+}

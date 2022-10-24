@@ -1,0 +1,57 @@
+.profile{
+    padding:5rem 20rem;
+    font-size: 1.2rem;
+    &__card{
+        width:100%;
+        position: relative;
+        background-color: $color-primary;
+        padding: 1rem 3rem;
+        color:white;
+        &--status{
+            display: inline-block;
+            margin-left: 80%;
+            text-align: right;
+            color:yellow;
+            border:.2rem solid yellow;
+            padding:.2rem 1.2rem;
+        }
+        &--image{
+            width:10rem;
+            height:10rem;
+            
+            border-radius: 50%;
+            margin-left: 25%;
+            
+            img{
+                height: 100%;
+                width:100%;
+                border-radius: 50%;
+                
+            }
+        }
+        &--username{
+            margin-left:8rem;
+        }
+        &--details{
+            padding:2rem 0;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+
+           &--attribute{
+            color:$color-secondary;
+            
+            
+           }
+           &--values{
+           
+            
+           }
+        }
+    }
+    .profile__active-services{
+        &--heading{
+            border:1px solid green;
+            padding: 1.5rem;
+        }
+    }
+}

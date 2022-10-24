@@ -1,0 +1,84 @@
+.choose-service{
+    background:#4a4a4a ;
+    width:50%;
+    font-size:$default-font-size;
+    padding: 2rem;
+    // margin-top:15rem ;
+    // @include absCenter;
+    margin:15rem auto;
+    border-radius: 2rem;
+    @include respond(tab-port){
+        width:60%;
+    }
+    @include respond(phone){
+        width:80%;
+    }
+ 
+    h2{
+        color:white;
+    }
+    &__options{
+        background: white;
+        font-size: 1.3rem;
+        padding:2rem;
+        margin:0 auto;
+        width:80%;
+        
+        
+        &--select{
+            padding: .8rem 1.2rem;
+            color:white;
+            background:$color-primary ;
+            cursor: pointer;
+            border-radius: .5rem;
+            width:90%;
+
+            &:focus,
+            &:hover{
+                outline: none;
+                // background-color:;
+            }    
+                
+           
+        }       
+    }
+    &__location{
+        @include clearfix;
+        padding:3rem 3rem;
+        background-color: white;
+        color:black;
+        width: 80%;
+        margin: 0 auto;
+       
+        &--icon{
+            float:right;
+        }
+        &--text{
+            float:left;
+        }
+    }
+    &__shop-order-detail{
+        background-color: white;
+        width:80%;
+        margin:0 auto;
+        padding:2rem;
+        border-radius:2rem;
+        &--shop{
+            @include clearfix;
+           &--shopname{
+            float:left;
+           }
+           &--price{
+            float:right;
+           }
+        }
+    }
+    .btn-order{
+       position: relative;
+        display:inline-block;
+        left:50%;
+        transform: translateX(-50%);
+        background-color: $color-primary;
+        color:white;
+    }
+}
